@@ -1,0 +1,48 @@
+#Unidad organizativa astronautas
+dn: ou=astronautas,dc=tiaeroespacial,dc=es
+objectClass: organizationalUnit
+ou: astronautas
+
+#Unidad grupo_astro
+dn: ou=grupo_astro,dc=tiaeroespacial,dc=es
+objectClass: organizationalUnit
+ou: grupo_astro
+
+#Unidad organizativa instrumentos
+dn: ou=instrumentos,dc=tiaeroespacial,dc=es
+objectClass: organizationalUnit
+ou: instrumentos
+
+#Unidad grupo_instru
+dn: ou=grupo_instru,dc=tiaeroespacial,dc=es
+objectClass: organizationalUnit
+ou: grupo_instru
+
+#Usuario Mario en la ud. organizativa astro
+dn: uid=mario,ou=grupo_astro,dc=tiaeroespacial,dc=es
+objectClass: inetOrgPerson
+uid:mario
+sn: mario
+cn:mario
+mail: mario@example.com
+userPassword: 1234
+
+#Instrumento Rob1 en la ud. organizativa instrumentos
+dn: uid=rob1,ou=grupo_instru,dc=tiaeroespacial,dc=es
+objectClass: inetOrgPerson
+uid:rob1
+description: vuela por el espacio
+sn:rob1
+cn:rob1
+mail: rob1@example.com
+userPassword: 1234
+
+#Instrumento Rob2 en la ud. organizativa instrumentos
+dn: uid=rob2,ou=grupo_instru,dc=tiaeroespacial,dc=es
+objectClass: inetOrgPerson
+uid:rob2
+sn:rob2
+cn:rob2
+description: vigila las estrellas
+mail: rob2@example.com
+userPassword: 1234
